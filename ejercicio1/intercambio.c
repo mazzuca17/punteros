@@ -12,15 +12,18 @@ void intercambio(int* p, int* i)
 void ordenarEnteros(int viEnteros[], int iCantidad){
   int i,ordenado=0;
 
-  while (!ordenado) {
+  while (!ordenado) 
+  {
     ordenado=1;
 
-    for(i=0; i<iCantidad;i++){
-        if(viEnteros[i]<viEnteros[i+1]){
+    for(i=0; i<iCantidad;i++)
+    {
+        if(viEnteros[i]<viEnteros[i+1])
+        {
           ordenado=0;
           intercambio(&viEnteros[i],&viEnteros[i+1]);
         }
-      }
     }
+  }
 
 }
